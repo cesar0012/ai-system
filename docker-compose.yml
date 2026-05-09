@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  rag-app:
+    build: .
+    volumes:
+      - ./chroma_db:/app/chroma_db
+    tty: true
